@@ -67,7 +67,7 @@ public class School {
         
         System.out.println("Students that got good mark (4 or 5) for hard lessons: ");
         
-        students.stream().filter(x -> x.getLesson().getHardness() == Hardness.EASY).filter(x -> x.getMark() > 3).forEach(System.out::print);
+        students.stream().filter(x -> x.getLesson().getHardness() == Hardness.HARD).filter(x -> x.getMark() > 3).forEach(System.out::print);
         
     }
     
